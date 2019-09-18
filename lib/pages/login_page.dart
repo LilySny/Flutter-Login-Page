@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
-import 'package:login_page/blocs/login_bloc.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -9,7 +8,6 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   final _fkey = GlobalKey<FormState>();
-  final loginBloc = LoginBloc();
   final errorLoggingSnack = SnackBar(
       backgroundColor: Colors.red, content: Text('Invalid Email or Password!'));
   final loginSnack =
